@@ -127,7 +127,7 @@ const UserSignIn = ({ formValue, onSetFormValue }) => {
       <button
         onClick={() => {
           let register = JSON.parse(localStorage.getItem("register"));
-          register.email === formValue.email ||
+          register.email === formValue.email &&
           register.password === formValue.password
             ? onSetFormValue({
                 name: "",
